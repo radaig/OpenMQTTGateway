@@ -35,7 +35,7 @@ jobs:
       - name: Upload Release Assets
         uses: csexton/release-asset-action@v2
         with:
-          pattern: "build/*"
+          pattern: "toDeploy/*"
           github-token: ${{ secrets.GITHUB_TOKEN }}
           release-url: ${{ steps.release-id.outputs.upload_url }}
           allow-overwrite: true
